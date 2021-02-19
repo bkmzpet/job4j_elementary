@@ -1,10 +1,10 @@
 package ru.job4j.condition;
 
 public class TrgArea {
+        @SuppressWarnings("checkstyle:WhitespaceAround")
         public static double area(double a, double b, double c) {
-            double rsl = (a+b+c)/2;
-            double rsl2 = Math.sqrt(rsl*((rsl-a)*(rsl-b)*(rsl-c)));
-            return rsl2;
+            double rsl = (b + a + c) / 2;
+            return Math.sqrt(rsl * ((rsl - a) * (rsl - b) * (rsl - c)));
         }
 
         public static void main(String[] args) {
