@@ -6,9 +6,12 @@ public class ArrayLoop {
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = i * 2 + 3;
         }
-        for (int number : numbers) {
-            System.out.println(number);
-            }
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(
+                    "Текущий элемент массива начиная с последнего: "
+                            + numbers[numbers.length - 1 - i]
+            );
         }
     }
+}
 
