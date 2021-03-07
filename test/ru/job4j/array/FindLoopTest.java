@@ -14,4 +14,13 @@ public class FindLoopTest {
         int expect = 0;
         assertThat(result, is(expect));
     }
+
+    @Test
+    public void whenArrayHas4Then0() {
+        int[] input = {5, 4, 3, 2};
+        int value = 6;
+        int result = FindLoop.indexOf(input, value);
+        int expect = -1;
+        assertThat(result, is(expect));
+    }
 }
