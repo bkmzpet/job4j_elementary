@@ -5,14 +5,13 @@ package ru.job4j.array;
             for (int index = 0; index < array.length; index++) {
                 if (array[index] == null) {
                     int point = index;
-                    for (index = point; index < array.length; index++) {
-                        if (array[index] != null) {
-                            String temp = array[index];
-                            array[index] = array[point];
-                            array[point] = temp;
+                    for (int j = point; j < array.length; j++) {
+                        if (array[j] != null) {
+                            String temp = array[point];
+                            array[point] = array[j];
+                            array[j] = temp;
                             break;
                         }
-
                     }
 
                 }
