@@ -1,5 +1,6 @@
 package ru.job4j.sort;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;
@@ -17,6 +18,6 @@ public class MachineTest {
     public void when50by35() {
         int[] expected = {10, 5};
         int[] rsl = Machine.change(50, 35);
-        assertThat(rsl, is(expected));
+        Assert.assertThat(rsl, is(expected));
     }
 }
